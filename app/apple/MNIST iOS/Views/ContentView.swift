@@ -25,6 +25,7 @@ struct ContentView: View {
             Button("Make Prediction") {
                 self.showImageSelectionView.toggle()
             }
+            .padding(.vertical)
             .sheet(isPresented: self.$showImageSelectionView) {
                 ImageSelectionView(onDone: { image in
                     if image != nil {
@@ -33,7 +34,6 @@ struct ContentView: View {
 
                     self.showImageSelectionView = false
                 })
-                .padding(.horizontal)
             }
         }
         .padding(.horizontal)
