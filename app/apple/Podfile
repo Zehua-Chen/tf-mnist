@@ -1,0 +1,8 @@
+use_frameworks!
+pod 'TensorFlowLiteSwift'
+
+target 'MNIST iOS' do
+  use_frameworks!
+  pod 'TensorFlowLiteSwift'
+
+end

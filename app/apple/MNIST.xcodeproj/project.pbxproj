@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		390CDE1297F6F4CC9B5D28A6 /* Pods_MNIST_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DCFDB56F3839078C76D075 /* Pods_MNIST_iOS.framework */; };
+		6770AC24236AC5C1002EA5DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770AC23236AC5C1002EA5DF /* AppDelegate.swift */; };
+		6770AC26236AC5C1002EA5DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770AC25236AC5C1002EA5DF /* SceneDelegate.swift */; };
+		6770AC28236AC5C1002EA5DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770AC27236AC5C1002EA5DF /* ContentView.swift */; };
+		6770AC2A236AC5C4002EA5DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6770AC29236AC5C4002EA5DF /* Assets.xcassets */; };
+		6770AC2D236AC5C4002EA5DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6770AC2C236AC5C4002EA5DF /* Preview Assets.xcassets */; };
+		6770AC30236AC5C4002EA5DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6770AC2E236AC5C4002EA5DF /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1815AC995D394A33BDA29E06 /* Pods-MNIST iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNIST iOS.debug.xcconfig"; path = "Target Support Files/Pods-MNIST iOS/Pods-MNIST iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6770AC20236AC5C1002EA5DF /* MNIST iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MNIST iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6770AC23236AC5C1002EA5DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6770AC25236AC5C1002EA5DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6770AC27236AC5C1002EA5DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6770AC29236AC5C4002EA5DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6770AC2C236AC5C4002EA5DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6770AC2F236AC5C4002EA5DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6770AC31236AC5C4002EA5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DCFDB56F3839078C76D075 /* Pods_MNIST_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MNIST_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E33C525FEC9209A5194E1C /* Pods-MNIST iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNIST iOS.release.xcconfig"; path = "Target Support Files/Pods-MNIST iOS/Pods-MNIST iOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6770AC1D236AC5C1002EA5DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390CDE1297F6F4CC9B5D28A6 /* Pods_MNIST_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29A717F8263D861D921F6AB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8DCFDB56F3839078C76D075 /* Pods_MNIST_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6770AC15236AC562002EA5DF = {
+			isa = PBXGroup;
+			children = (
+				6770AC22236AC5C1002EA5DF /* MNIST iOS */,
+				6770AC21236AC5C1002EA5DF /* Products */,
+				AE05E8B029C1B96365AE38EE /* Pods */,
+				29A717F8263D861D921F6AB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6770AC21236AC5C1002EA5DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6770AC20236AC5C1002EA5DF /* MNIST iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6770AC22236AC5C1002EA5DF /* MNIST iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6770AC23236AC5C1002EA5DF /* AppDelegate.swift */,
+				6770AC25236AC5C1002EA5DF /* SceneDelegate.swift */,
+				6770AC27236AC5C1002EA5DF /* ContentView.swift */,
+				6770AC29236AC5C4002EA5DF /* Assets.xcassets */,
+				6770AC2E236AC5C4002EA5DF /* LaunchScreen.storyboard */,
+				6770AC31236AC5C4002EA5DF /* Info.plist */,
+				6770AC2B236AC5C4002EA5DF /* Preview Content */,
+			);
+			path = "MNIST iOS";
+			sourceTree = "<group>";
+		};
+		6770AC2B236AC5C4002EA5DF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6770AC2C236AC5C4002EA5DF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AE05E8B029C1B96365AE38EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1815AC995D394A33BDA29E06 /* Pods-MNIST iOS.debug.xcconfig */,
+				D7E33C525FEC9209A5194E1C /* Pods-MNIST iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6770AC1F236AC5C1002EA5DF /* MNIST iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6770AC34236AC5C4002EA5DF /* Build configuration list for PBXNativeTarget "MNIST iOS" */;
+			buildPhases = (
+				55AF375D3305C84AB5253B6B /* [CP] Check Pods Manifest.lock */,
+				6770AC1C236AC5C1002EA5DF /* Sources */,
+				6770AC1D236AC5C1002EA5DF /* Frameworks */,
+				6770AC1E236AC5C1002EA5DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MNIST iOS";
+			productName = "MNIST iOS";
+			productReference = 6770AC20236AC5C1002EA5DF /* MNIST iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6770AC16236AC562002EA5DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				TargetAttributes = {
+					6770AC1F236AC5C1002EA5DF = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 6770AC19236AC562002EA5DF /* Build configuration list for PBXProject "MNIST" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6770AC15236AC562002EA5DF;
+			productRefGroup = 6770AC21236AC5C1002EA5DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6770AC1F236AC5C1002EA5DF /* MNIST iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6770AC1E236AC5C1002EA5DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6770AC30236AC5C4002EA5DF /* LaunchScreen.storyboard in Resources */,
+				6770AC2D236AC5C4002EA5DF /* Preview Assets.xcassets in Resources */,
+				6770AC2A236AC5C4002EA5DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55AF375D3305C84AB5253B6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MNIST iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6770AC1C236AC5C1002EA5DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6770AC24236AC5C1002EA5DF /* AppDelegate.swift in Sources */,
+				6770AC26236AC5C1002EA5DF /* SceneDelegate.swift in Sources */,
+				6770AC28236AC5C1002EA5DF /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6770AC2E236AC5C4002EA5DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6770AC2F236AC5C4002EA5DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6770AC1A236AC562002EA5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		6770AC1B236AC562002EA5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		6770AC32236AC5C4002EA5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1815AC995D394A33BDA29E06 /* Pods-MNIST iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"MNIST iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = SYDGB25RXW;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "MNIST iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "zehuachen.MNIST-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6770AC33236AC5C4002EA5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E33C525FEC9209A5194E1C /* Pods-MNIST iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"MNIST iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = SYDGB25RXW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "MNIST iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "zehuachen.MNIST-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6770AC19236AC562002EA5DF /* Build configuration list for PBXProject "MNIST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6770AC1A236AC562002EA5DF /* Debug */,
+				6770AC1B236AC562002EA5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6770AC34236AC5C4002EA5DF /* Build configuration list for PBXNativeTarget "MNIST iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6770AC32236AC5C4002EA5DF /* Debug */,
+				6770AC33236AC5C4002EA5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6770AC16236AC562002EA5DF /* Project object */;
+}
