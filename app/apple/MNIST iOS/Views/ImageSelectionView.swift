@@ -16,17 +16,19 @@ struct ImageSelectionView: View {
     var body: some View {
         NavigationView {
             List(0..<40) { index in
-                HStack {
-                    Image("test-image-\(index)", bundle: nil, label: Text("Some Image"))
-                    Spacer()
-                    Text("\(index)")
-                }
-                .onTapGesture {
+                Button(action: {
                     let identifier = "test-image-\(index)"
                     let uiImage = UIImage(named: identifier, in: nil, compatibleWith: nil)
                     self.onDone(uiImage)
+                }) {
+                    HStack {
+                        Image("test-image-\(index)", bundle: nil, label: Text("Some Image"))
+                                .renderingMode(.original)
+                        Spacer()
+                        Text("Test \(index)")
+                    }
+                    .padding(.horizontal)
                 }
-                .padding(.horizontal)
             }
             .navigationBarTitle("Select Image")
             .navigationBarItems(trailing: Button("Cancel") { self.onDone(nil) })

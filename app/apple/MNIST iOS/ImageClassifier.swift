@@ -26,24 +26,29 @@ class ImageClassifier {
 
     }
 
-    func classifyImage(_ image: UIImage, completionHandler: @escaping () -> Void) {
+    func classifyImage(
+        _ image: UIImage,
+        completionHandler: @escaping (_ prediction: Prediction) -> Void)
+    {
         DispatchQueue.global(qos: .userInteractive).async {
+            try! self._interpreter.allocateTensors()
+
             let inputShape = try! self._interpreter.input(at: 0).shape
             let inputWidth = inputShape.dimensions[0]
             let inputHeight = inputShape.dimensions[1]
 
-            try! self._interpreter.allocateTensors()
-
             let rawImage = image.scaledBy(width: inputWidth, height: inputHeight)
 
-            try! self._interpreter.copy(rawImage, toInputAt: 0)
+            try! self._interpreter.copy(rawImage!, toInputAt: 0)
             try! self._interpreter.invoke()
 
             let output = try! self._interpreter.output(at: 0)
+            let classes = output.data.toArray(type: Float.self)
+
+            print("classes = \(classes)")
 
             DispatchQueue.main.async {
-                print("output shape = \(output.shape)")
-                completionHandler()
+                completionHandler(Prediction(image: image, rawPredictionClasses: classes))
             }
         }
     }

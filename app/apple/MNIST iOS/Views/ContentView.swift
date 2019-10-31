@@ -19,6 +19,7 @@ struct ContentView: View {
         VStack {
             if self.prediction != nil {
                 PredictionView(prediction: self.prediction!)
+                Divider()
             }
 
             Button("Make Prediction") {
@@ -32,12 +33,17 @@ struct ContentView: View {
 
                     self.showImageSelectionView = false
                 })
+                .padding(.horizontal)
             }
         }
+        .padding(.horizontal)
     }
 
     func predict(for image: UIImage) {
         let classifier = ImageClassifier()
+        classifier.classifyImage(image, completionHandler: { prediction in
+            self.prediction = prediction
+        })
     }
 }
 
