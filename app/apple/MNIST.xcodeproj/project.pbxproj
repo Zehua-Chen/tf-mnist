@@ -19,6 +19,7 @@
 		6770AC3A236ACAA5002EA5DF /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770AC39236ACAA5002EA5DF /* Prediction.swift */; };
 		6770AC40236AD5A3002EA5DF /* quantized-model.tfmodel in Resources */ = {isa = PBXBuildFile; fileRef = 6770AC3F236AD5A3002EA5DF /* quantized-model.tfmodel */; };
 		6770AC42236AD5CB002EA5DF /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770AC41236AD5CB002EA5DF /* ImageClassifier.swift */; };
+		6770AC45236AD8B2002EA5DF /* UIImage+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770AC44236AD8B2002EA5DF /* UIImage+Export.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		6770AC39236ACAA5002EA5DF /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 		6770AC3F236AD5A3002EA5DF /* quantized-model.tfmodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "quantized-model.tfmodel"; sourceTree = "<group>"; };
 		6770AC41236AD5CB002EA5DF /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		6770AC44236AD8B2002EA5DF /* UIImage+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Export.swift"; sourceTree = "<group>"; };
 		B8DCFDB56F3839078C76D075 /* Pods_MNIST_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MNIST_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E33C525FEC9209A5194E1C /* Pods-MNIST iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNIST iOS.release.xcconfig"; path = "Target Support Files/Pods-MNIST iOS/Pods-MNIST iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,14 +83,13 @@
 		6770AC22236AC5C1002EA5DF /* MNIST iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6770AC43236AD6E0002EA5DF /* Views */,
 				6770AC3D236AD532002EA5DF /* Models */,
 				6770AC23236AC5C1002EA5DF /* AppDelegate.swift */,
-				6770AC25236AC5C1002EA5DF /* SceneDelegate.swift */,
-				6770AC27236AC5C1002EA5DF /* ContentView.swift */,
 				6770AC41236AD5CB002EA5DF /* ImageClassifier.swift */,
-				6770AC37236ACA56002EA5DF /* PredictionView.swift */,
+				6770AC44236AD8B2002EA5DF /* UIImage+Export.swift */,
+				6770AC25236AC5C1002EA5DF /* SceneDelegate.swift */,
 				6770AC39236ACAA5002EA5DF /* Prediction.swift */,
-				6770AC35236AC882002EA5DF /* ImageSelectionView.swift */,
 				6770AC29236AC5C4002EA5DF /* Assets.xcassets */,
 				6770AC2E236AC5C4002EA5DF /* LaunchScreen.storyboard */,
 				6770AC31236AC5C4002EA5DF /* Info.plist */,
@@ -111,6 +112,16 @@
 				6770AC3F236AD5A3002EA5DF /* quantized-model.tfmodel */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		6770AC43236AD6E0002EA5DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6770AC27236AC5C1002EA5DF /* ContentView.swift */,
+				6770AC37236ACA56002EA5DF /* PredictionView.swift */,
+				6770AC35236AC882002EA5DF /* ImageSelectionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AE05E8B029C1B96365AE38EE /* Pods */ = {
@@ -224,6 +235,7 @@
 				6770AC3A236ACAA5002EA5DF /* Prediction.swift in Sources */,
 				6770AC26236AC5C1002EA5DF /* SceneDelegate.swift in Sources */,
 				6770AC28236AC5C1002EA5DF /* ContentView.swift in Sources */,
+				6770AC45236AD8B2002EA5DF /* UIImage+Export.swift in Sources */,
 				6770AC42236AD5CB002EA5DF /* ImageClassifier.swift in Sources */,
 				6770AC36236AC882002EA5DF /* ImageSelectionView.swift in Sources */,
 			);

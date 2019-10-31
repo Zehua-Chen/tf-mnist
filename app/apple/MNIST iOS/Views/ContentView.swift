@@ -38,7 +38,6 @@ struct ContentView: View {
 
     func predict(for image: UIImage) {
         let classifier = ImageClassifier()
-        print(classifier.modelPath)
     }
 }
 
