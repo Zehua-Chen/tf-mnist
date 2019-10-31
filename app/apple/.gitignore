@@ -2,6 +2,8 @@ bin/
 gems/
 Pods/
 
+.bundle
+
 .DS_Store
 # Xcode
 #
