@@ -6,10 +6,39 @@
 //
 
 import SwiftUI
+import TensorFlowLite
 
 struct ContentView: View {
+    @State
+    var prediction: Prediction? = nil
+
+    @State
+    var showImageSelectionView: Bool = false
+
     var body: some View {
-        Text("Hello World")
+        VStack {
+            if self.prediction != nil {
+                PredictionView(prediction: self.prediction!)
+            }
+
+            Button("Make Prediction") {
+                self.showImageSelectionView.toggle()
+            }
+            .sheet(isPresented: self.$showImageSelectionView) {
+                ImageSelectionView(onDone: { image in
+                    if image != nil {
+                        self.predict(for: image!)
+                    }
+
+                    self.showImageSelectionView = false
+                })
+            }
+        }
+    }
+
+    func predict(for image: UIImage) {
+        let classifier = ImageClassifier()
+        print(classifier.modelPath)
     }
 }
 

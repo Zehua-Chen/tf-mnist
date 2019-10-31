@@ -4,6 +4,8 @@ Pods/
 
 .bundle
 
+*.tfmodel
+
 .DS_Store
 # Xcode
 #
