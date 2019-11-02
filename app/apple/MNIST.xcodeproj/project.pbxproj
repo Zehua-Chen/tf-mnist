@@ -38,6 +38,7 @@
 		6770AC3F236AD5A3002EA5DF /* quantized-model.tfmodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "quantized-model.tfmodel"; sourceTree = "<group>"; };
 		6770AC41236AD5CB002EA5DF /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
 		6770AC44236AD8B2002EA5DF /* UIImage+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Export.swift"; sourceTree = "<group>"; };
+		67E9F607236D1E2A00C89303 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B8DCFDB56F3839078C76D075 /* Pods_MNIST_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MNIST_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E33C525FEC9209A5194E1C /* Pods-MNIST iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNIST iOS.release.xcconfig"; path = "Target Support Files/Pods-MNIST iOS/Pods-MNIST iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				6770AC3F236AD5A3002EA5DF /* quantized-model.tfmodel */,
+				67E9F607236D1E2A00C89303 /* README.md */,
 			);
 			path = Models;
 			sourceTree = "<group>";
