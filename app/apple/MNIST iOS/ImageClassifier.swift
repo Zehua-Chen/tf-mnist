@@ -23,7 +23,7 @@ class ImageClassifier {
 
     init() {
         _interpreter = try! Interpreter(modelPath: ImageClassifier.modelPath)
-
+        try! _interpreter.allocateTensors()
     }
 
     func classifyImage(
@@ -31,8 +31,6 @@ class ImageClassifier {
         completionHandler: @escaping (_ prediction: Prediction) -> Void)
     {
         DispatchQueue.global(qos: .userInteractive).async {
-            try! self._interpreter.allocateTensors()
-
             let inputShape = try! self._interpreter.input(at: 0).shape
             let inputWidth = inputShape.dimensions[0]
             let inputHeight = inputShape.dimensions[1]
@@ -44,8 +42,6 @@ class ImageClassifier {
 
             let output = try! self._interpreter.output(at: 0)
             let classes = output.data.toArray(type: Float.self)
-
-            print("classes = \(classes)")
 
             DispatchQueue.main.async {
                 completionHandler(Prediction(image: image, rawPredictionClasses: classes))
